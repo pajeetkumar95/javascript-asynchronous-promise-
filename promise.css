@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+#wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(55, 255, 0);
+}
+
+img{
+    height: 300px;
+    width: 250px;
+    margin-top: 2rem;
+}
+
+.box{
+    height: 500px;
+    width: 380px;
+    margin: 2rem 1rem;
+    text-align: center;
+    border: 3px solid #000;
+    border-radius: 20px;
+    background-color: aliceblue;
+
+}
+.box h2 , p, h3{
+    margin: 0.8rem;
+}
+.box h2:hover{
+    cursor: pointer;
+    scale: 1.2;
+}
+
+.box img:hover{
+    transition: all 1s ease;
+    transform: rotate(360deg);
+}
