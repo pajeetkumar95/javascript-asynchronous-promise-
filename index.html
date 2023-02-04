@@ -23,65 +23,65 @@
 
     <script>
 
-        // fetch('https://dummyjson.com/products')
-        // .then((response)=>{
-        //     return response.json()
-        // })
-        // .then((result)=>{
-        //     console.log(result)
-        //     showdata(result.products )
-        // })
+        fetch('https://dummyjson.com/products')
+        .then((response)=>{
+            return response.json()
+        })
+        .then((result)=>{
+            console.log(result)
+            showdata(result.products )
+        })
 
-        // function showdata (data){
-        //    for(let i=0;i<data.length;i++){
+        function showdata (data){
+           for(let i=0;i<data.length;i++){
 
-        //     const head = document.createElement("div")
-        //     head.setAttribute("class","box")
-        //     document.querySelector("#wrapper").append(head)
-
-
-        //     const image = document.createElement("img")
-        //     // console.log(image)
-        //     image.src = data[i].images[0]
-        //     head.insertAdjacentElement("beforeend",image)
-
-        //     // document.querySelector("#wrapper").append(image)
+            const head = document.createElement("div")
+            head.setAttribute("class","box")
+            document.querySelector("#wrapper").append(head)
 
 
-        //     const name = document.createElement("title")
-        //     // console.log(name)
-        //     name.innerHTML = data[i].title
-        //     head.insertAdjacentElement("beforeend",name)
+            const image = document.createElement("img")
+            // console.log(image)
+            image.src = data[i].images[0]
+            head.insertAdjacentElement("beforeend",image)
 
-        //     // document.querySelector("#wrapper").append(name)
-
-
-        //     const para = document.createElement("p")
-        //     // console.log(para)
-        //     para.innerHTML = data[i].description
-        //     head.insertAdjacentElement("beforeend",para)
-
-        //     // document.querySelector("#wrapper").append(para) 
+            // document.querySelector("#wrapper").append(image)
 
 
-        //     const price = document.createElement("h2")
-        //     // console.log(price)
-        //     price.innerHTML ="Price :" + data[i].price
-        //     head.insertAdjacentElement("beforeend",price)
+            const name = document.createElement("title")
+            // console.log(name)
+            name.innerHTML = data[i].title
+            head.insertAdjacentElement("beforeend",name)
 
-        //     // document.querySelector("#wrapper").append(price)
-
-
-        //     const discount =document.createElement("h3")
-        //     // console.log(discount)
-        //     discount.innerHTML = " discount :" +data[i].rating
-        //     head.insertAdjacentElement("beforeend",discount)
-
-        //     // document.querySelector("#wrapper").append(discount)
+            // document.querySelector("#wrapper").append(name)
 
 
-        //    } 
-        // }
+            const para = document.createElement("p")
+            // console.log(para)
+            para.innerHTML = data[i].description
+            head.insertAdjacentElement("beforeend",para)
+
+            // document.querySelector("#wrapper").append(para) 
+
+
+            const price = document.createElement("h2")
+            // console.log(price)
+            price.innerHTML ="Price :" + data[i].price
+            head.insertAdjacentElement("beforeend",price)
+
+            // document.querySelector("#wrapper").append(price)
+
+
+            const discount =document.createElement("h3")
+            // console.log(discount)
+            discount.innerHTML = " discount :" +data[i].rating
+            head.insertAdjacentElement("beforeend",discount)
+
+            // document.querySelector("#wrapper").append(discount)
+
+
+           } 
+        }
 
 
 
